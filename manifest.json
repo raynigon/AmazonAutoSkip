@@ -1,0 +1,17 @@
+{
+  "name": "AmazonAutoSkip",
+  "version": "1.0",
+  "description": "Skips the intros and adds automatically on amazon",
+  "permissions": ["activeTab"],
+  "content_scripts": [{
+    "matches": ["https://*.amazon.com/*", "https://*.amazon.de/*"],
+    "js": ["background.js"]
+  }],
+  "icons": {
+    "16": "images/logo_16.png",
+    "32": "images/logo_32.png",
+    "48": "images/logo_48.png",
+    "128": "images/logo_128.png"
+  },
+  "manifest_version": 2
+}
