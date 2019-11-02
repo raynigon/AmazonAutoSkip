@@ -3,10 +3,30 @@
   "version": "1.0",
   "description": "Skips the intros and adds automatically on amazon",
   "permissions": ["activeTab"],
-  "content_scripts": [{
-    "matches": ["https://*.amazon.com/*", "https://*.amazon.de/*"],
-    "js": ["background.js"]
-  }],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*amazon.cn/*",
+        "https://*amazon.in/*",
+        "https://*amazon.co.jp/*",
+        "https://*amazon.com.sg/*",
+        "https://*amazon.com.tr/*",
+        "https://*amazon.ae/*",
+        "https://*amazon.fr/*",
+        "https://*amazon.de/*",
+        "https://*amazon.it/*",
+        "https://*amazon.nl/*",
+        "https://*amazon.es/*",
+        "https://*amazon.co.uk/*",
+        "https://*amazon.ca/*",
+        "https://*amazon.com.mx/*",
+        "https://*amazon.com/*",
+        "https://*amazon.com.au/*",
+        "https://*amazon.com.br/*"
+      ],
+      "js": ["background.js"]
+    }
+  ],
   "icons": {
     "16": "images/logo_16.png",
     "32": "images/logo_32.png",
