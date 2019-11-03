@@ -4,6 +4,11 @@
 Skips adds and Intros automatically.
 
 ## Installation
+
+### Firefox
+https://addons.mozilla.org/firefox/addon/amazonautoskip/
+
+### Chrome
 Since this app is only intendeed for Private use, 
 and i dont want to care about the Chrome App Store Entry,
 you have to install this app manually.
