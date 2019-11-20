@@ -13,7 +13,7 @@ fi
 VERSION=`cat manifest.json | python3 -c "import sys, json; print(json.load(sys.stdin)['version'])"`
 COMMIT_LOG=`git log -1 --format='%s'`
 
-web-ext build --overwrite-dest
+web-ext build --ignore-files create-release.sh --overwrite-dest
 github-release upload \
   --owner "raynigon" \
   --repo "AmazonAutoSkip" \
