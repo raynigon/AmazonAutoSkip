@@ -22,8 +22,8 @@ git tag | grep "v$VERSION"
 RESULT=$?
 if [ $RESULT -eq 1 ]; then
     git tag -a "v$VERSION" -m "New Version with Improvements and Bugfixes. ${COMMIT_LOG}"
+    git push --follow-tags
 fi
-git push --follow-tags
 
 web-ext build --ignore-files create-release.sh --overwrite-dest
 addons-linter web-ext-artifacts/*.zip
