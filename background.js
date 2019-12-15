@@ -1,12 +1,35 @@
-// Copyright 2018 The Chromium Authors. All rights reserved.
+// Copyright 2018 Simon Schneider. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-'use strict';
+"use strict";
 
-setInterval(()=>{
-  // Skip Intro
-  Array.from(document.querySelectorAll(".skipElement")).forEach((e)=>e.click());
-  // Skip Ad
-  Array.from(document.querySelectorAll(".adSkipButton")).forEach((e)=>e.click());
-}, 1000);
+const DEFAULT_SETTINGS = {
+  settings: {
+    advertisment: true,
+    intro: true
+  }
+};
+
+const createSkipWithSelectorInterval = (selector, timeout) => {
+  setInterval(() => {
+    Array.from(document.querySelectorAll(selector)).forEach(e => e.click());
+  }, timeout);
+};
+
+(() => {
+  const options = browser.storage.sync.get();
+  options.then(value => {
+    if (!value || !value.settings) {
+      value = DEFAULT_SETTINGS;
+    }
+    if (value.settings.advertisment) {
+      // Skip Ad
+      createSkipWithSelectorInterval(".adSkipButton", 1000);
+    }
+    if (value.settings.intro) {
+      // Skip Intro
+      createSkipWithSelectorInterval(".skipElement", 1000);
+    }
+  }, console.error);
+})();

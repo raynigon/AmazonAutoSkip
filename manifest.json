@@ -1,8 +1,16 @@
 {
   "name": "AmazonAutoSkip",
-  "version": "1.1",
-  "description": "Skips the intros and adds automatically on amazon",
-  "permissions": ["activeTab"],
+  "version": "1.2",
+  "description": "Skips the intros and ads automatically in amazon video",
+  "permissions": ["activeTab", "storage"],
+  "options_ui": {
+    "page": "pages/options/index.html"
+  },
+  "applications": {
+    "gecko": {
+      "id": "amazonautoskip@raynigon.com"
+    }
+  },
   "content_scripts": [
     {
       "matches": [
