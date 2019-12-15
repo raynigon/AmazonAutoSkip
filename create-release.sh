@@ -5,6 +5,11 @@ if ! type "web-ext" > /dev/null; then
     npm install --global web-ext
 fi
 
+# Install addons linter for publishing to Firefox
+if ! type "web-ext" > /dev/null; then
+    npm install -g addons-linter
+fi
+
 # Install GithubCLI for publishing to Github
 if ! type "github-release" > /dev/null; then
     npm install -g github-release-cli
@@ -21,6 +26,7 @@ fi
 git push --follow-tags
 
 web-ext build --ignore-files create-release.sh --overwrite-dest
+addons-linter web-ext-artifacts/*.zip
 github-release upload \
   --owner "raynigon" \
   --repo "AmazonAutoSkip" \

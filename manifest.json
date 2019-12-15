@@ -8,7 +8,7 @@
   },
   "applications": {
     "gecko": {
-      "id": "amazonautoskip@raynigon.com"
+      "id": "{6a714ef0-a850-49bc-b796-560df60a02c9}"
     }
   },
   "content_scripts": [
