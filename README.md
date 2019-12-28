@@ -8,6 +8,9 @@ Skips adds and Intros automatically.
 ### Firefox
 https://addons.mozilla.org/firefox/addon/amazonautoskip/
 
+### Opera
+https://addons.opera.com/extensions/details/amazon-auto-skip/
+
 ### Chrome
 Since this app is only intendeed for Private use, 
 and i dont want to care about the Chrome App Store Entry,
