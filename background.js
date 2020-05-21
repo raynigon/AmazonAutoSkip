@@ -31,6 +31,7 @@ const createSkipWithSelectorInterval = (selector, timeout) => {
     if (value.settings.intro) {
       // Skip Intro
       createSkipWithSelectorInterval(".skipElement", 1000);
+      createSkipWithSelectorInterval(".f1oordr3", 1000);
     }
   }, console.error);
 })();
