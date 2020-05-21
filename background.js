@@ -26,6 +26,7 @@ const createSkipWithSelectorInterval = (selector, timeout) => {
     if (value.settings.advertisment) {
       // Skip Ad
       createSkipWithSelectorInterval(".adSkipButton", 1000);
+      createSkipWithSelectorInterval(".f1cw2swo", 1000);
     }
     if (value.settings.intro) {
       // Skip Intro
