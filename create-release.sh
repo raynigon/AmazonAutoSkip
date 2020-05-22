@@ -6,7 +6,7 @@ if ! type "web-ext" > /dev/null; then
 fi
 
 # Install addons linter for publishing to Firefox
-if ! type "web-ext" > /dev/null; then
+if ! type "addons-linter" > /dev/null; then
     npm install -g addons-linter
 fi
 
@@ -21,7 +21,7 @@ COMMIT_LOG=`git log -1 --format='%s'`
 git tag | grep "v$VERSION"
 RESULT=$?
 if [ $RESULT -eq 1 ]; then
-    git tag -a "v$VERSION" -m "New Version with Improvements and Bugfixes. ${COMMIT_LOG}"
+    git tag -a "v$VERSION" -m "Updated Selectors. ${COMMIT_LOG}"
     git push --follow-tags
 fi
 
