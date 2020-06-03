@@ -30,7 +30,8 @@
         "https://*.amazon.com.mx/*",
         "https://*.amazon.com/*",
         "https://*.amazon.com.au/*",
-        "https://*.amazon.com.br/*"
+        "https://*.amazon.com.br/*",
+        "https://*.primevideo.com/*"
       ],
       "js": ["background.js"]
     }
