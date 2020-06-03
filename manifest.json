@@ -1,6 +1,6 @@
 {
   "name": "AmazonAutoSkip",
-  "version": "1.4",
+  "version": "1.5",
   "description": "Skips the intros and ads automatically in amazon video",
   "permissions": ["activeTab", "storage"],
   "options_ui": {
