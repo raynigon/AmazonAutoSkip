@@ -27,11 +27,14 @@ const createSkipWithSelectorInterval = (selector, timeout) => {
       // Skip Ad
       createSkipWithSelectorInterval(".adSkipButton", 1000);
       createSkipWithSelectorInterval(".f1cw2swo", 1000);
+      createSkipWithSelectorInterval(".atvwebplayersdk-skipelement-button", 1000);
+
     }
     if (value.settings.intro) {
       // Skip Intro
       createSkipWithSelectorInterval(".skipElement", 1000);
       createSkipWithSelectorInterval(".f1oordr3", 1000);
+      createSkipWithSelectorInterval(".atvwebplayersdk-skipelement-button", 1000);
     }
   }, console.error);
 })();
