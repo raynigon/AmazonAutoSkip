@@ -1,6 +1,8 @@
 # Amazon Auto Skip
 ![Amazon Auto Skip](./images/logo_128.png)
 
+## Due to limitations in Amazon Prime this extension does no longer work
+
 Skips adds and Intros automatically.
 
 ## Installation
